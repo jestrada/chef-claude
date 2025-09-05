@@ -1,1 +1,1 @@
-# chef-claude
+# Chef Claude
