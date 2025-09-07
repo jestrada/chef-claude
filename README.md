@@ -43,20 +43,34 @@ Follow the recipe writing guidelines in `CLAUDE.md` for consistent, high-quality
 - Named steps with time estimates
 - Substitution suggestions and accessibility notes
 
+## Quick Start (3 Simple Steps)
+
+1. **Create a directory** for your recipe (e.g., `chicken-parmesan`)
+2. **Add your source files** to that directory:
+   - Photo of the finished dish
+   - Image or PDF of the original recipe
+   - (At least one image file is required)
+3. **Run the script**: `./bin/create-recipe chicken-parmesan`
+
+That's it! Claude Code will examine your files, extract the recipe details, and create a beautifully formatted HTML recipe following the established style guidelines.
+
+## Use This System Yourself
+
+Want to standardize your own recipe collection? Clone this repository:
+
+```bash
+git clone https://github.com/jestrada/chef-claude.git
+cd chef-claude
+```
+
+Then follow the Quick Start steps above. The system works with any recipe source - cookbooks, websites, handwritten notes, or photos. Just make sure you have [Claude Code](https://claude.ai/code) installed.
+
 ## Current Recipes
 
-- **Lemon Pepper Zucchini Pasta with Dill** - Modified version with added chicken
-  - Based on Yewande Komolafe's NYT recipe
-  - Added protein and cooking optimizations
-  - Serves 4, ~35 minutes total time
-
-## Workflow
-
-1. **Collect**: Find a recipe from any cookbook, website, or source
-2. **Extract**: Use the source material to gather ingredients and instructions
-3. **Standardize**: Apply consistent formatting using the template and style guide
-4. **Personalize**: Adapt ingredients, add context, adjust techniques for my kitchen
-5. **Format**: Create clean HTML for easy viewing and printing
+- **Greek Fisherman's Soup** - Traditional Mediterranean seafood soup
+- **Moussaka** - Classic Greek layered casserole with eggplant and béchamel  
+- **Spanakorizo** - Greek spinach rice comfort food
+- **Lemon Pepper Zucchini Pasta with Dill** - Modern pasta with miso butter sauce
 
 ## Built with Claude Code
 
