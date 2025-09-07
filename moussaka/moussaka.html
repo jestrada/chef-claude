@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moussaka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.3;
+            color: #333;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            font-weight: normal;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+        }
+        
+        .title-image-row {
+            display: flex;
+            gap: 40px;
+            margin: 30px 0 20px 0;
+            align-items: flex-start;
+        }
+        
+        .title-info {
+            flex: 1;
+        }
+        
+        .recipe-image {
+            width: 350px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        
+        .description {
+            margin: 20px 0 30px 0;
+        }
+        
+        .description p {
+            font-size: 1em;
+            margin: 0;
+            text-align: justify;
+            line-height: 1.3;
+        }
+        
+        .recipe-content {
+            display: flex;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        
+        .ingredients, .preparation {
+            flex: 1;
+        }
+        
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #000;
+        }
+        
+        .recipe-meta {
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+        
+        .recipe-meta div {
+            margin-bottom: 5px;
+        }
+        
+        .ingredients ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .ingredients li {
+            margin-bottom: 8px;
+            padding-left: 0;
+        }
+        
+        .step {
+            margin-bottom: 20px;
+        }
+        
+        .step-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .step-content {
+            text-align: justify;
+            line-height: 1.3;
+        }
+        
+        .private-notes {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 3px solid #000;
+        }
+        
+        .private-notes h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+        
+        .private-notes p {
+            font-style: italic;
+            color: #666;
+            margin: 0;
+        }
+        
+        @media (max-width: 700px) {
+            .recipe-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .title-image-row {
+                flex-direction: column;
+                gap: 20px;
+                margin: 20px 0;
+            }
+            
+            .recipe-image {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-image-row">
+        <div class="title-info">
+            <h1>Moussaka</h1>
+        </div>
+        <img src="photo.jpeg" alt="Moussaka" class="recipe-image">
+    </div>
+    
+    <div class="description">
+        <p>This traditional Greek moussaka is a rich, layered casserole that combines tender eggplant with a savory meat sauce and creamy béchamel topping. The dish requires patience and time but rewards you with layers of complex Mediterranean flavors. Each component can be prepared ahead, making it perfect for entertaining or a special family dinner.</p>
+    </div>
+    
+    <div class="recipe-content">
+        <div class="ingredients">
+            <div class="section-title">INGREDIENTS</div>
+            <div class="recipe-meta">
+                <div><strong>Yield:</strong> 6 servings</div>
+                <div><strong>Prep Time:</strong> 2 hours</div>
+                <div><strong>Cook Time:</strong> 50 minutes</div>
+            </div>
+            <ul>
+                <li>4½ lb (2 kg) eggplants (aubergines), cut into ½-inch (1 cm) slices</li>
+                <li>½ cup (120 ml / 4 fl oz) olive oil</li>
+                <li>1 onion, grated</li>
+                <li>2 garlic cloves, sliced</li>
+                <li>1 lb 2 oz (500 g) beef or lamb, coarsely ground (minced)</li>
+                <li>2 cups (430 ml / 16 fl oz) peeled fresh or canned tomatoes, puréed</li>
+                <li>¼ teaspoon ground allspice</li>
+                <li>½ teaspoon sugar</li>
+                <li>salt and pepper</li>
+                <li>1 egg white, lightly beaten</li>
+                <li>5 tablespoons finely chopped fresh parsley</li>
+                <li>butter, for greasing</li>
+                <li>5 tablespoons fine dried bread crumbs</li>
+                <li>scant 1 cup (100 g / 3½ oz) grated kefalotin, Parmesan, or mizithra cheese</li>
+                <li>5 tablespoons heavy (double) cream</li>
+                <li>3 egg yolks, lightly beaten</li>
+                <li>3 cups (750 ml / 1¼ pints) light béchamel or White sauce (p 57)</li>
+            </ul>
+        </div>
+        
+        <div class="preparation">
+            <div class="section-title">PREPARATION</div>
+            
+            <div class="step">
+                <div class="step-title">Prepare Eggplant (1 hr 15 min)</div>
+                <div class="step-content">
+                    Sprinkle the eggplant slices with salt and let drain in a colander for 1 hour. Rinse, squeeze gently, and pat dry. Heat half the oil in a skillet or frying pan. Add the eggplants and cook over medium heat, turning occasionally, for 6-8 minutes, until lightly browned on both sides. Remove from the heat and drain on paper towels.
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-title">Cook Meat Base (15 min)</div>
+                <div class="step-content">
+                    Heat the remaining oil in a heavy pan. Add the onion and garlic and cook over low heat, stirring occasionally, for 5 minutes, until softened. Increase the heat to medium, add the meat and cook, stirring and breaking up the meat with the spoon, for 10 minutes, until lightly browned. Add the tomatoes, allspice, and sugar and season with salt and pepper. Reduce the heat and simmer for 15-20 minutes, or until the liquid has evaporated. Remove from the heat and let cool, then fold in the egg white and parsley.
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-title">Assemble Layers (10 min)</div>
+                <div class="step-content">
+                    Preheat the oven to 400°F (200°C/Gas Mark 6) and grease an ovenproof dish, 10 x 14 inches (25 x 35 cm), with butter and sprinkle with 2 tablespoons of the bread crumbs. Cover the base of the dish with half the prepared eggplant slices, overlapping them slightly. Spread the meat mixture on top and sprinkle with half the grated cheese and 2 tablespoons of the remaining bread crumbs.
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-title">Complete Assembly (5 min)</div>
+                <div class="step-content">
+                    Cover with the remaining eggplant slices, spread the remaining meat mixture on top, and sprinkle with the remaining cheese and remaining bread crumbs. At this point, the dish may be covered and frozen. Thaw before baking. Stir the cream and egg yolk mixture into the béchamel and spread it evenly over the surface of the dish.
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-title">Bake to Golden (50 min)</div>
+                <div class="step-content">
+                    Bake for about 50 minutes, or until the top is golden brown. Remove from the oven and let stand for 15 minutes before serving.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="private-notes">
+        <h3>Private Notes</h3>
+        <p>You can replace half or all the eggplants with sliced potatoes or courgettes. If using potatoes, line the base of the dish with them to absorb the juices.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# Create Recipe Script
+# Usage: ./bin/create-recipe folder-name
+
+set -e
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 folder-name"
+    echo "Example: $0 chicken-parmesan"
+    exit 1
+fi
+
+FOLDER_NAME="$1"
+SCRIPT_DIR="$(dirname "$0")"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+
+# Check if folder exists
+if [ ! -d "$PROJECT_ROOT/$FOLDER_NAME" ]; then
+    echo "Error: Folder '$FOLDER_NAME' does not exist."
+    echo "Please create the folder and add your recipe images first."
+    exit 1
+fi
+
+# Check if images exist in folder
+IMAGE_COUNT=$(find "$PROJECT_ROOT/$FOLDER_NAME" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) | wc -l)
+
+if [ "$IMAGE_COUNT" -eq 0 ]; then
+    echo "Error: No images found in '$FOLDER_NAME' folder."
+    echo "Please add at least one image (recipe source or dish photo) to the folder."
+    exit 1
+fi
+
+echo "Found $IMAGE_COUNT image(s) in $FOLDER_NAME folder"
+echo "Images found:"
+find "$PROJECT_ROOT/$FOLDER_NAME" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) -exec basename {} \;
+
+echo ""
+echo "Calling Claude to create recipe..."
+echo ""
+
+# Call Claude Code with instructions
+claude "I need you to create a new recipe in the folder '$FOLDER_NAME'. 
+
+Here's what you should do:
+1. Examine all files in the $FOLDER_NAME folder to understand what images/sources are available
+2. If there's a recipe source (PDF, screenshot, etc.), read it to extract the recipe details
+3. If there's just a dish photo, ask me for the recipe details
+4. Create a new HTML file using the recipe-template.html as a base
+5. Follow the recipe writing guidelines from CLAUDE.md
+6. Name the HTML file appropriately (e.g., chicken-parmesan.html)
+7. Make sure to reference the correct image filename in the HTML
+
+Please examine the folder contents first and let me know what you find, then proceed with creating the recipe."
