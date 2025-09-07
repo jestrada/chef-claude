@@ -17,14 +17,20 @@
         }
         
         .header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 20px;
             margin-bottom: 40px;
         }
         
         .logo {
-            width: 120px;
+            width: 80px;
             height: auto;
-            margin-bottom: 20px;
+            flex-shrink: 0;
+        }
+        
+        .header-text {
+            flex: 1;
         }
         
         h1 {
@@ -112,6 +118,16 @@
         }
         
         @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .logo {
+                width: 100px;
+            }
+            
             .recipe-card {
                 flex-direction: column;
                 gap: 20px;
@@ -127,8 +143,10 @@
 <body>
     <div class="header">
         <img src="assets/ChefClaude.jpg" alt="Chef Claude Logo" class="logo">
-        <h1>Chef Claude</h1>
-        <div class="subtitle">A Personal Recipe Collection</div>
+        <div class="header-text">
+            <h1>Chef Claude</h1>
+            <div class="subtitle">A Personal Recipe Collection</div>
+        </div>
     </div>
     
     <div class="description">

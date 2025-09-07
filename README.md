@@ -1,10 +1,10 @@
-<div align="center">
-  <img src="assets/ChefClaude.jpg" alt="Chef Claude Logo" width="200">
-  
-  # Chef Claude
-  
-  A personal recipe standardization system that transforms inconsistent cookbook recipes into a unified, personalized format optimized for my cooking style and kitchen setup.
-</div>
+<img align="left" src="assets/ChefClaude.jpg" alt="Chef Claude Logo" width="100" style="margin-right: 20px;">
+
+# Chef Claude
+
+A personal recipe standardization system that transforms inconsistent cookbook recipes into a unified, personalized format optimized for my cooking style and kitchen setup.
+
+<br clear="left"/>
 
 ## Why This Project?
 
