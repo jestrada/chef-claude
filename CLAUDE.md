@@ -14,6 +14,9 @@ Use sensory cues that help cooks recognize success: "until the onions are transl
 ## Practical Details
 Include prep time, cook time, and serving size upfront. Mention equipment needs early. Address common pitfalls with phrases like "be careful not to overmix" or "if the sauce seems too thick, add pasta water gradually."
 
+## Equipment Section
+Include an Equipment section immediately after the Ingredients list. List all necessary kitchen tools and appliances needed for the recipe, including items like woks or skillets, pots for blanching, specialized utensils, and essential prep tools. This helps cooks gather everything they need before starting and ensures they have the right equipment for successful execution.
+
 ## Step Formatting
 Always name each step with 2-3 descriptive words and include a time estimate in parentheses. Example: "Prepare Eggplant (1 hr 15 min)" or "Cook Meat Base (15 min)". This helps cooks understand what they're doing and plan their time effectively.
 
