@@ -2,6 +2,8 @@
 
 # Chef Claude
 
+**[View Recipe Collection →](https://jestrada.github.io/chef-claude/)**
+
 A personal recipe standardization system that transforms inconsistent cookbook recipes into a unified, personalized format optimized for my cooking style and kitchen setup.
 
 <br clear="left"/>
