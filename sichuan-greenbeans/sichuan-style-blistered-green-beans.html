@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sichuan-Style Blistered Green Beans</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.3;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: normal;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+        }
+
+        .title-image-row {
+            display: flex;
+            gap: 40px;
+            margin: 30px 0 20px 0;
+            align-items: flex-start;
+        }
+
+        .title-info {
+            flex: 1;
+        }
+
+        .recipe-image {
+            width: 350px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .description {
+            margin: 20px 0 30px 0;
+        }
+
+        .description p {
+            font-size: 1em;
+            margin: 0;
+            text-align: justify;
+            line-height: 1.3;
+        }
+
+        .flavor-description {
+            font-size: 0.9em;
+            color: #666;
+            margin: 15px 0 0 0;
+            line-height: 1.4;
+            font-style: italic;
+        }
+
+        .recipe-content {
+            display: flex;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .ingredients, .preparation {
+            flex: 1;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #000;
+        }
+
+        .recipe-meta {
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+
+        .recipe-meta div {
+            margin-bottom: 5px;
+        }
+
+        .ingredients ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ingredients li {
+            margin-bottom: 8px;
+            padding-left: 0;
+        }
+
+        .step {
+            margin-bottom: 20px;
+        }
+
+        .step-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .step-content {
+            text-align: justify;
+            line-height: 1.3;
+        }
+
+        .private-notes {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 3px solid #000;
+        }
+
+        .private-notes h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .private-notes p {
+            font-style: italic;
+            color: #666;
+            margin: 0;
+        }
+
+        @media (max-width: 700px) {
+            .recipe-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .title-image-row {
+                flex-direction: column;
+                gap: 20px;
+                margin: 20px 0;
+            }
+
+            .recipe-image {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-image-row">
+        <div class="title-info">
+            <h1>Sichuan-Style Blistered Green Beans</h1>
+            <div class="recipe-meta">
+                <div><strong>Yield:</strong> 4 servings</div>
+                <div><strong>Total Time:</strong> 30 minutes</div>
+            </div>
+            <div class="flavor-description">
+                The blistered beans develop a concentrated sweetness that plays against the funky depth of fermented black beans and ground pork, while Sichuan peppercorns create a tingling sensation that amplifies the heat from dried chilies. Fresh ginger and garlic provide aromatic brightness that cuts through the rich, savory base.
+            </div>
+        </div>
+        <img src="pic.png" alt="Sichuan-Style Blistered Green Beans" class="recipe-image">
+    </div>
+
+    <div class="description">
+        <p>This classic Sichuan dish, known as gan bian si ji dou (干煸四季豆), transforms humble green beans into an addictively complex side that exemplifies the region's mastery of texture and layered flavors. The traditional dry-frying technique—slowly cooking vegetables without oil until they wrinkle and concentrate—has been adapted for the home kitchen through quick blanching followed by high-heat stir-frying. The result is green beans with crispy, blistered exteriors giving way to tender interiors, each one coated in an intensely savory mixture of ground pork, fermented black beans, and preserved vegetables. What makes this dish quintessentially Sichuanese is the interplay of ma la—the numbing-spicy combination of Sichuan peppercorns and dried chilies—with the deep umami notes from multiple fermented ingredients, creating a flavor profile that hits every part of the palate.</p>
+    </div>
+
+    <div class="recipe-content">
+        <div class="ingredients">
+            <div class="section-title">INGREDIENTS</div>
+            <ul>
+                <li>1½ pounds green beans, trimmed</li>
+                <li>3 tablespoons neutral oil (such as grapeseed), divided</li>
+                <li>4 ounces ground pork</li>
+                <li>2 tablespoons Shaoxing wine or dry sherry</li>
+                <li>1 tablespoon soy sauce</li>
+                <li>2 teaspoons fermented black beans, rinsed and roughly chopped</li>
+                <li>2 tablespoons ya cai (Sichuan preserved mustard greens) or 1 tablespoon minced pickled jalapeños</li>
+                <li>1 tablespoon minced fresh ginger</li>
+                <li>2 garlic cloves, minced</li>
+                <li>4-6 dried red chilies, broken in half, seeds shaken out</li>
+                <li>1 teaspoon whole Sichuan peppercorns</li>
+                <li>½ teaspoon sugar</li>
+                <li>½ teaspoon sesame oil</li>
+                <li>2 scallions, white and light green parts only, thinly sliced</li>
+                <li>Salt</li>
+            </ul>
+        </div>
+
+        <div class="preparation">
+            <div class="section-title">PREPARATION</div>
+
+            <div class="step">
+                <div class="step-title">Blanch Beans (10 min)</div>
+                <div class="step-content">
+                    Bring a large pot of salted water to a boil. Add green beans and cook until bright green and just barely tender, about 3 minutes. They should still have significant crunch. Drain immediately and spread on a clean kitchen towel to dry thoroughly. Pat the beans completely dry—any residual moisture will cause spattering during the next step.
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Blister Beans (8 min)</div>
+                <div class="step-content">
+                    Heat wok or large skillet over high heat until smoking. Add 2 tablespoons oil and swirl to coat. Add dried green beans in a single layer—work in batches if necessary to avoid crowding. Let them sear undisturbed for 2 minutes until blistered and charred in spots. Toss and continue cooking, stirring occasionally, until beans are wrinkled and golden brown all over, about 5 minutes total. Transfer to a plate.
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Cook Meat Base (5 min)</div>
+                <div class="step-content">
+                    Return wok to high heat with remaining 1 tablespoon oil. Add ground pork and cook, breaking it into small pieces with your spoon, until browned and crispy, about 3 minutes. Push pork to the side and add fermented black beans, ya cai, ginger, and garlic to the center of the wok. Stir-fry until fragrant, about 30 seconds, then mix everything together.
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Combine and Season (3 min)</div>
+                <div class="step-content">
+                    Add dried chilies and Sichuan peppercorns, stirring constantly until fragrant, about 15 seconds—be careful not to let them burn. Return green beans to the wok along with Shaoxing wine, soy sauce, and sugar. Toss everything together over high heat until beans are heated through and well coated with the mixture, about 2 minutes. Remove from heat, drizzle with sesame oil, and add scallions. Give everything a final toss and transfer to a serving plate immediately.
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Serve (1 min)</div>
+                <div class="step-content">
+                    Serve immediately while the beans are still crackling hot. The dish can be enjoyed as part of a multi-course Sichuan meal or alongside steamed rice to temper the heat. For the best texture contrast, consume within 15 minutes of cooking before the beans lose their characteristic blistered crispness.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="private-notes">
+        <h3>Private Notes</h3>
+        <p>Leave a Private Comment on this recipe and see it here.</p>
+    </div>
+</body>
+</html>
