@@ -34,3 +34,14 @@ When creating recipes, research the dish's origins, cultural significance, and t
 
 ## Primary Flavors
 Include a flavor description paragraph within the title area, positioned after the yield and timing information. Use 1-2 sentences that describe the dish's flavor progression and relationships using sensory-focused language. Rather than simply listing flavor characteristics, explain how different elements interact—such as how bright acidity cuts through rich fats, or how aromatic herbs complement earthy vegetables. This integrated approach gives readers an immediate preview of the dining experience while maintaining clean layout flow alongside the recipe image.
+
+## Recipe Timing
+Include separate prep time and cook time in addition to total time in the recipe meta section. Break down timing as:
+- **Prep Time:** Time for all ingredient preparation and setup
+- **Cook Time:** Active cooking/baking time
+- **Total Time:** Combined prep and cook time
+
+This helps cooks plan their schedule and understand the time commitment for each phase of the recipe.
+
+## Ingredient Integration in Steps
+Include specific ingredient quantities within the preparation steps so cooks don't need to constantly refer back to the ingredients list while cooking. For example, write "Add 2 tablespoons olive oil" in the step rather than just "Add olive oil." This creates a smoother cooking experience and reduces the chance of using incorrect amounts.
