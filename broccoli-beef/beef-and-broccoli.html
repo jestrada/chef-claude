@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef and Broccoli</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.3;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: normal;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+        }
+
+        .title-image-row {
+            display: flex;
+            gap: 40px;
+            margin: 30px 0 20px 0;
+            align-items: flex-start;
+        }
+
+        .title-info {
+            flex: 1;
+        }
+
+        .recipe-image {
+            width: 350px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .description {
+            margin: 20px 0 30px 0;
+        }
+
+        .description p {
+            font-size: 1em;
+            margin: 0;
+            text-align: justify;
+            line-height: 1.3;
+        }
+
+        .flavor-description {
+            font-size: 0.9em;
+            color: #666;
+            margin: 15px 0 0 0;
+            line-height: 1.4;
+            font-style: italic;
+        }
+
+        .recipe-content {
+            display: flex;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .ingredients, .preparation {
+            flex: 1;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #000;
+        }
+
+        .recipe-meta {
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+
+        .recipe-meta div {
+            margin-bottom: 5px;
+        }
+
+        .ingredients ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ingredients li {
+            margin-bottom: 8px;
+            padding-left: 0;
+        }
+
+        .step {
+            margin-bottom: 20px;
+        }
+
+        .step-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .step-content {
+            text-align: left;
+            line-height: 1.3;
+        }
+
+        .private-notes {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 3px solid #000;
+        }
+
+        .private-notes h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .private-notes p {
+            font-style: italic;
+            color: #666;
+            margin: 0;
+        }
+
+        @media (max-width: 700px) {
+            .recipe-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .title-image-row {
+                flex-direction: column;
+                gap: 20px;
+                margin: 20px 0;
+            }
+
+            .recipe-image {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-image-row">
+        <div class="title-info">
+            <h1>Beef and Broccoli</h1>
+            <div class="recipe-meta">
+                <div><strong>Yield:</strong> 4 servings</div>
+                <div><strong>Prep Time:</strong> 20 minutes</div>
+                <div><strong>Cook Time:</strong> 15 minutes</div>
+                <div><strong>Total Time:</strong> 35 minutes</div>
+            </div>
+            <div class="flavor-description">
+                Tender beef mingles with crisp-tender broccoli in a savory-sweet sauce where ginger and garlic provide aromatic depth. The oyster sauce creates an umami-rich glaze that coats each piece while maintaining the vegetables' fresh, bright character.
+            </div>
+        </div>
+        <img src="Beef-and-Broccoli-square-FS.jpg" alt="Beef and Broccoli" class="recipe-image">
+    </div>
+
+    <div class="description">
+        <p>This Chinese-American classic emerged in the early 20th century when Chinese immigrants encountered Italian broccoli in California markets and married it with familiar Cantonese stir-fry techniques. While you won't find this exact dish in China, it draws inspiration from gai lan chao niu rou, a traditional preparation using Chinese broccoli. The result is a restaurant favorite that's surprisingly simple to achieve at home with a screaming-hot wok and properly prepared ingredients. The key is velveting the beef—a technique that ensures tenderness—and working quickly once the cooking begins.</p>
+    </div>
+
+    <div class="recipe-content">
+        <div class="ingredients">
+            <div class="section-title">INGREDIENTS</div>
+            <ul>
+                <li>1½ pounds flank steak, sliced across the grain into ¼-inch-thick slices</li>
+                <li>2 tablespoons soy sauce</li>
+                <li>2 tablespoons Shaoxing wine (or dry sherry)</li>
+                <li>1 tablespoon cornstarch</li>
+                <li>1 pound broccoli, cut into bite-sized florets</li>
+                <li>3 tablespoons neutral oil (such as vegetable or canola), divided</li>
+                <li>3 garlic cloves, minced</li>
+                <li>1 tablespoon fresh ginger, minced</li>
+                <li>¼ cup oyster sauce</li>
+                <li>2 tablespoons water</li>
+                <li>1 teaspoon sugar</li>
+                <li>1 teaspoon sesame oil</li>
+                <li>Cooked white rice, for serving</li>
+            </ul>
+
+            <div class="section-title" style="margin-top: 30px;">EQUIPMENT</div>
+            <ul>
+                <li>Wok or large skillet (12-inch or larger)</li>
+                <li>Large pot for blanching</li>
+                <li>Colander or spider skimmer</li>
+                <li>Mixing bowls</li>
+                <li>Sharp knife for slicing beef</li>
+            </ul>
+        </div>
+
+        <div class="preparation">
+            <div class="section-title">PREPARATION</div>
+
+            <div class="step">
+                <div class="step-title">Velvet the Beef (15 min)</div>
+                <div class="step-content">
+                    In a medium bowl, combine the sliced flank steak with 2 tablespoons soy sauce, 2 tablespoons Shaoxing wine, and 1 tablespoon cornstarch. Mix thoroughly with your hands until the beef is evenly coated and the marinade feels slightly sticky. Let stand at room temperature for 15 minutes. This velveting process creates a protective coating that keeps the beef tender during high-heat cooking.
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Blanch the Broccoli (5 min)</div>
+                <div class="step-content">
+                    Bring a large pot of water to a rolling boil. Add the broccoli florets and cook for 2 minutes, until bright green and just tender but still crisp. Drain immediately and rinse under cold water to stop the cooking. Set aside. This blanching step ensures the broccoli cooks evenly and maintains its vibrant color without becoming mushy in the stir-fry.
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Prepare the Sauce (2 min)</div>
+                <div class="step-content">
+                    In a small bowl, whisk together ¼ cup oyster sauce, 2 tablespoons water, 1 teaspoon sugar, and 1 teaspoon sesame oil until the sugar dissolves. Set this sauce mixture near your cooking station—once the stir-frying begins, everything moves quickly.
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Sear the Beef (3 min)</div>
+                <div class="step-content">
+                    Heat your wok or large skillet over high heat until a bead of water sizzles and evaporates immediately on contact. Add 2 tablespoons neutral oil and swirl to coat. When the oil shimmers and just begins to smoke, add the marinated beef in a single layer, working in batches if necessary to avoid crowding. Let it sear undisturbed for 1 minute until a golden crust forms, then stir-fry for another 1-2 minutes until the beef is about 80% cooked—it should still have some pink. Transfer to a plate.
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Build the Stir-Fry (3 min)</div>
+                <div class="step-content">
+                    Return the wok to high heat and add the remaining 1 tablespoon neutral oil. Add 3 cloves minced garlic and 1 tablespoon minced ginger, stirring constantly for 20-30 seconds until fragrant but not browned—the aromatics should perfume the oil without burning. Immediately add the blanched broccoli and stir-fry for 1 minute, tossing to coat in the aromatic oil.
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Combine and Glaze (2 min)</div>
+                <div class="step-content">
+                    Return the seared beef and any accumulated juices to the wok. Pour in the prepared sauce and toss everything vigorously for 1-2 minutes until the sauce thickens slightly and forms a glossy glaze coating the beef and broccoli. The sauce should cling to the ingredients rather than pooling at the bottom. If the mixture seems dry, add a tablespoon of water. Taste and adjust seasoning if needed.
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Serve Immediately (0 min)</div>
+                <div class="step-content">
+                    Transfer to a serving platter and serve immediately over steamed white rice. The beef should be tender and silky, the broccoli bright green and crisp-tender, and the sauce clinging to every piece with a lustrous sheen. This dish is best enjoyed straight from the wok while still piping hot.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="private-notes">
+        <h3>Private Notes</h3>
+        <p>Leave a Private Comment on this recipe and see it here.</p>
+    </div>
+</body>
+</html>
